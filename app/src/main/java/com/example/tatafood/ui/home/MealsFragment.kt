@@ -1,6 +1,5 @@
-package com.example.tatafood.ui
+package com.example.tatafood.ui.home
 
-import android.os.Binder
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +12,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.tatafood.Adapters.MealAdapter
 import com.example.tatafood.R
 import com.example.tatafood.databinding.FragmentMealsBinding
-import com.example.tatafood.databinding.MealsRowBinding
-import com.example.tatafood.model.Meal
+
 import com.example.tatafood.viewModels.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 

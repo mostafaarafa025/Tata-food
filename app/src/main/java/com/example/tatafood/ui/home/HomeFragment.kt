@@ -1,4 +1,4 @@
-package com.example.tatafood.ui
+package com.example.tatafood.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

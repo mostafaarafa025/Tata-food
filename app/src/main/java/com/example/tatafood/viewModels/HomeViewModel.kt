@@ -11,6 +11,7 @@ import com.example.tatafood.model.Meal
 import com.example.tatafood.network.repsoitory.HomeRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 
 @HiltViewModel
@@ -143,7 +144,17 @@ class HomeViewModel @Inject constructor(
 
     fun removeFavourite(meal: Meal) = viewModelScope.launch {
         homeRepository.removeFavourite(meal) }
+//    fun saveUserName(value: String) {
+//        viewModelScope.launch {
+//            homeRepository.saveUserName("userName", value)
+//        }
+//    }
+//
+//    fun getUserName(): String? = runBlocking {
+//        homeRepository.getUserName("userName")
+//    }
 
-  // fun getFavorites() =homeRepository.getFavoritesMeal
+
+    // fun getFavorites() =homeRepository.getFavoritesMeal
 }
 

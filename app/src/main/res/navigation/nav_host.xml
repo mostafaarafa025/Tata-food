@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.tatafood.ui.HomeFragment"
+        android:name="com.example.tatafood.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.example.tatafood.ui.FavoritesFragment"
+        android:name="com.example.tatafood.ui.home.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.tatafood.ui.SearchFragment"
+        android:name="com.example.tatafood.ui.home.SearchFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_search" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/mealsFragment"
-        android:name="com.example.tatafood.ui.MealsFragment"
+        android:name="com.example.tatafood.ui.home.MealsFragment"
         android:label="fragment_meals"
         tools:layout="@layout/fragment_meals" >
         <argument
@@ -49,11 +49,16 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.tatafood.ui.DetailsFragment"
+        android:name="com.example.tatafood.ui.home.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <argument
             android:name="mealId"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.tatafood.ui.home.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

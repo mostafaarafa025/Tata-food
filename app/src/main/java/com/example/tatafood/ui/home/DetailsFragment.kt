@@ -1,4 +1,4 @@
-package com.example.tatafood.ui
+package com.example.tatafood.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 
 import com.example.tatafood.R
 import com.example.tatafood.databinding.FragmentDetailsBinding
+
 import com.example.tatafood.viewModels.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 

@@ -1,9 +1,10 @@
-package com.example.tatafood
+package com.example.tatafood.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
+import com.example.tatafood.R
 import com.example.tatafood.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val bottomNavigation=binding.bottomNavigation
-        val findNavigation=Navigation.findNavController(this,R.id.hostFragment)
+        val findNavigation=Navigation.findNavController(this, R.id.hostFragment)
         NavigationUI.setupWithNavController(bottomNavigation,findNavigation)
     }
 }
